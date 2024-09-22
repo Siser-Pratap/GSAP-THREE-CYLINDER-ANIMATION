@@ -7,9 +7,10 @@ const App = () => {
   return (
     <Canvas>
       <OrbitControls />
+      <ambientLight />
       <mesh>
-        <boxGeometry />
-        <meshBasicMaterial />
+        <cylinderGeometry />
+        <meshStandardMaterial />
       </mesh>
     </Canvas>
   )
