@@ -8,7 +8,7 @@ import Cylinder from './Cylinder';
 
 const App = () => {
   return (
-    <Canvas>
+    <Canvas camera={{fov:60}}>
       <OrbitControls />
       <ambientLight />
       <Cylinder />
