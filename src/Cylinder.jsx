@@ -4,6 +4,7 @@ import Unsplash from './assets';
 import { useTexture } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
+import { Mesh } from 'three';
 
 const Cylinder = () => {
 

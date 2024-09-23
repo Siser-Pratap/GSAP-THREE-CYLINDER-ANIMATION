@@ -8,25 +8,26 @@ import { EffectComposer } from '@react-three/postprocessing';
 
 
 
+
 const App = () => {
   return (
     <>
-    <Canvas flat camera={{fov:100}}>
+    <Canvas className="h-12 w-6" camera={{fov:65}}>
       <OrbitControls />
       <ambientLight />
       <Cylinder />
-      <EffectComposer>
+      {/* <EffectComposer>
           <Bloom
               mipmapBlur // Enables or disables mipmap blur.
-              intensity={13.0} // The bloom intensity.
+              intensity={0.1} // The bloom intensity.
               luminanceThreshold={0.1} // luminance threshold. Raise this value to mask out darker elements in the scene.
               luminanceSmoothing={0.1} // smoothness of the luminance threshold. Range is [0, 1]
       />
-      </EffectComposer>
+      </EffectComposer> */}
     </Canvas>
-    <div className='w-full py-32 bg-black'>
+    {/* <div className='w-full py-32 h-14 bg-black'>
      <p className='text-white text-[20px]'>Siser Pratap</p>
-  </div>
+  </div> */}
     </>
   )
 }
