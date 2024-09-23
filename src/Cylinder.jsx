@@ -13,13 +13,15 @@ let cyl = useRef(null);
 
 useFrame((state, delta)=>{
     cyl.current.rotation.y+=delta;
-})
+});
 
   return (
-    <mesh ref={cyl} rotation={[0,1.4,0.5]}>
-        <cylinderGeometry args={[1.5,1.5,2,60,60,true]} />
-        <meshStandardMaterial map={image} transparent side={THREE.DoubleSide}/>
+    <group rotation={[0,1.4,0.5]}>
+      <mesh ref={cyl}>
+          <cylinderGeometry args={[1.5,1.5,2,60,60,true]} />
+          <meshStandardMaterial map={image} transparent side={THREE.DoubleSide}/>
       </mesh>
+    </group>
   )
 }
 
