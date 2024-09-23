@@ -10,7 +10,8 @@ import { EffectComposer } from '@react-three/postprocessing';
 
 const App = () => {
   return (
-    <Canvas flat camera={{fov:60}}>
+    <>
+    <Canvas flat camera={{fov:100}}>
       <OrbitControls />
       <ambientLight />
       <Cylinder />
@@ -23,6 +24,10 @@ const App = () => {
       />
       </EffectComposer>
     </Canvas>
+    <div className='w-full py-32 bg-black'>
+     <p className='text-white text-[20px]'>Siser Pratap</p>
+  </div>
+    </>
   )
 }
 
